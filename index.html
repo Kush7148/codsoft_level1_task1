@@ -1,0 +1,232 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel = "stylesheet" href = "style.css">
+  <script src="https://kit.fontawesome.com/c27616fbf1.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <header>
+        <img src="Kush.jpg" class="logo">
+        
+      <nav>
+        
+        <ul id = "sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </header>
+      <div class="header-text">
+        <h1>Hi, I'm Kush Chhatbar</h1>
+        <p>I'm <span class=text-design style="color: rgb(28, 190, 244); font-weight: 600; font-size: 30px;"></span></p>
+          </div>
+      </div>
+        </div>
+  
+  <div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Screenshot 2023-04-06 204931.jpg" class="img">
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+
+              "I'm a dedicated tech enthusiast and relentless explorer of the digital realm, driven by an insatiable curiosity for all things tech. From a young age, I've been captivated by the endless possibilities that technology offers and have made it my mission to delve deeper into this ever-evolving landscape.
+              <br><br>
+              My passion for technology extends to both hardware and software, making me a versatile explorer of the digital cosmos. I enjoy tinkering with gadgets, building custom PCs, and immersing myself in coding projects. The satisfaction of unraveling complex systems and crafting innovative solutions is what fuels my tech-driven adventures.
+              <br><br>
+              As a tech enthusiast, I'm committed to sharing my discoveries, insights, and excitement with others. I love engaging in discussions, collaborating with fellow tech aficionados, and staying at the forefront of technological breakthroughs. The possibilities in the tech world are boundless, and I'm here to embark on this exhilarating journey, one discovery at a time."</p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id = "skills">
+              <ul>
+                <li><span>Frontend Development</span><br>HTML5<br>CSS3<br>Javascript</li>
+                <li><span>Backend Development</span><br>PHP<br>MySQL</li>
+                <li><span>Basic Knowldege</span><br>Object oriented programming i.e. Java</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id = "experience">
+              <ul>
+                <li><span>UI/UX</span><br>2 months of experience in creating User interface and user experrience design(UI/UX) using Figma duing my graduation.</li><br>
+                <li><span>Frontend Development</span><br>6 months of experience in Creating Frontend web pages duing my graduation.<br></li><br>
+                <li><span>Backend Development</span><br>4 months of experience in writing sever side scripts duing my graduation.<br></li>
+            </div>
+
+            <div class="tab-contents" id = "education">
+              <ul>
+                <li><span>2018</span><br>Standard 10th<br>St. Xavier's School, Jamnagar</li>
+                <li><span>2020</span><br>Standard 12th<br>Purohit Science School, Jamnagar</li>
+                <li><span>2020</span><br>Currently pursuing my bachelors degree in Computer Engineering<br>Gyanmanjari Institute of Technology</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>  
+  </div>
+
+  <div id = "services">
+    <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-sharp fa-solid fa-code fa-beat-fade" style="color: #fcfcfc;"></i>
+          <h2>Frontend Development</h2>
+          <p>I'm a skilled and creative Frontend Developer with a passion for crafting immersive and visually appealing web experiences. With a keen eye for design and a strong foundation in HTML, CSS, and JavaScript, I bring websites to life by seamlessly blending aesthetics and functionality. I specialize in responsive web design, ensuring that your site looks stunning and functions flawlessly on a variety of devices.
+            <br><br>Whether it's creating pixel-perfect layouts, optimizing performance for fast loading, or enhancing user experiences through smooth animations and transitions, I'm dedicated to delivering frontend solutions that leave a lasting impression. Let's collaborate to turn your web visions into reality with a touch of frontend magic.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-database fa-beat-fade"></i>
+          <h2>Backend Development</h2>
+          <p>I'm a versatile developer with a strong foundation in both frontend and backend development. While my primary expertise lies in creating engaging and user-friendly frontend experiences, I also have a solid grasp of backend development to ensure seamless functionality and data management.
+            <br><br> I can manage databases, and implement server-side scripting to power the dynamic features of your applications. Whether it's processing user data, managing authentication, I'm equipped to handle these essential backend tasks.<br<br>
+            My ability to bridge the gap between the frontend and backend enables me to create well-rounded and fully-functional web applications
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script>
+    var typingEffect = new Typed(".text-design",{
+      strings : ["Web Developer","Frontend Developer","Backend Developer"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1500
+    })
+  </script>
+
+  <div id="Skills">
+    <div class="container">
+      <h1 class="sub-title">My Skills</h1>
+      <div class="skill-list">
+      <div class="frontend">
+        <h2>Frontend Development</h2>
+          <ul>
+            
+            <li class="html5"><i class="fa-brands fa-html5 fa-beat" style="color: #ff7300;"></i> HTML5</li>
+            <li><i class="fa-brands fa-css3-alt fa-beat" style="color: #1859c9;"></i> CSS3</li>
+            <li><i class="fa-brands fa-js fa-beat" style="color: #fff700;"></i> Javascript</li>
+          </ul>
+      </div>
+    <div class="backend">
+      <h2>Backend Development</h2>
+        <ul>
+          
+          <li><i class="fa-brands fa-php fa-beat"></i> PHP</li>
+          <li><i class="fa-sharp fa-solid fa-database fa-beat"></i> MySQL</li>
+        </ul>
+    </div>
+    <div class="basics">
+      <h2>Fundamentals</h2>
+        <ul>
+          <li><i class="fa-solid fa-c fa-beat"></i> C language</li>
+          <li><i class="fa-brands fa-java fa-beat"></i> Java</li>
+          <li><i class="fa-solid fa-server fa-beat"></i> Database(DBMS)</li>
+        </ul>
+    </div>
+  </div> 
+  </div>
+  </div>
+  <div id = "contact">
+    <div class="container">
+      <div class = "row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-sharp fa-solid fa-paper-plane"></i>kushchhatbar19@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91 8780324352</p>
+          <div class="social-icons">
+           
+            <a href="https://www.instagram.com/kush__19__/" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            
+            <a href="https://www.linkedin.com/in/kush-chhatbar-785762259" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Kush_Chhatbar_Resume_.pdf" download="Kush Chhatbar Resume" class="btn">Download Portfolio</a>
+        </div>
+        <div class="conatact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="text" name="Email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id = msg></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169; Kush. Made with <i class="fa-regular fa-face-smile-beam fa-bounce"></i> by Kush </p>
+      </div>
+  </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-links");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzmZafXcmB45lou3y9n9860aMBJcCeucDsadPZPqc4sPzUV02OIFAR9Fwp_ailkKuWkFg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
